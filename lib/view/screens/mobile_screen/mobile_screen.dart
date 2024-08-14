@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../widget/body/body.dart';
 import '../../widget/my_card_section/income/income.dart';
 import '../../widget/my_card_section/my_card_container/my_card_container.dart';
+import '../../widget/my_card_section/my_card_container/my_card_content.dart';
 import '../../widget/my_card_section/transaction_history/transaction_history.dart';
 import '../../widget/shared_widget/custom_drawer.dart';
 
@@ -43,11 +44,7 @@ class MobileScreen extends StatelessWidget {
                   children: [
                     BodyScreen(),
                     SizedBox(height: 10,),
-                    MyCardContainer(mainTitle:'My Card' , userName: 'Abdallah Abu Snineh', cardNumber: '0918 8124 0042 8129', expDate: '12/20\-124',),
-                    SizedBox(height: 10,),
-                    TransactionHistory(),
-                    SizedBox(height: 10,),
-                    Income()
+                  MyCardContent(),
                   ],
                 ),
               ),

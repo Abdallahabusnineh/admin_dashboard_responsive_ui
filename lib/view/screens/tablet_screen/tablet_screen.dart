@@ -1,3 +1,4 @@
+import 'package:admin_dashboard_responsive_ui/view/widget/my_card_section/my_card_container/my_card_content.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -32,11 +33,7 @@ class TabletScreen extends StatelessWidget {
                  children: [
                    BodyScreen(),
                    SizedBox(height: 10,),
-                   MyCardContainer(mainTitle:'My Card' , userName: 'Abdallah Abu Snineh', cardNumber: '0918 8124 0042 8129', expDate: '12/20\-124',),
-                   SizedBox(height: 10,),
-                   TransactionHistory(),
-                   SizedBox(height: 10,),
-                   Income()
+                  MyCardContent()
                  ],
                ),
              ),
