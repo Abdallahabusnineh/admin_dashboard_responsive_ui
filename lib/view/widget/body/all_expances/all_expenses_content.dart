@@ -1,3 +1,4 @@
+import 'package:admin_dashboard_responsive_ui/core/utils/is_responsive.dart';
 import 'package:flutter/material.dart';
 import 'all_expences_list.dart';
 import 'all_expenses_content_body.dart';
@@ -7,10 +8,11 @@ class AllExpensesContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IntrinsicHeight(
+   return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
       child: Row(
-        children: allExpensesListItem
-      ),
-    );
+            children: allExpensesListItem,
+      )
+        );
   }
 }

@@ -11,20 +11,16 @@ final bool containerColorIsActive;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
-          child: CircleAvatar(
-            radius: 25,
-            backgroundColor: containerColorIsActive?Colors.white.withOpacity(.10):Colors.grey.shade100,
-            child: SvgPicture.asset(
-              image,
-            ),
+        CircleAvatar(
+          radius: 25,
+          backgroundColor: containerColorIsActive?Colors.white.withOpacity(.10):Colors.grey.shade100,
+          child: SvgPicture.asset(
+            image,
           ),
         ),
-        Expanded(
-          child: IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.arrow_forward_ios_rounded),
-          ),
+        IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.arrow_forward_ios_rounded),
         ),
       ],
     );

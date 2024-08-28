@@ -20,7 +20,7 @@ class MyCardContent extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
         child:
-        ListView(
+        Column(
           children: [
             MyCardContainer(
               mainTitle: 'My Card',

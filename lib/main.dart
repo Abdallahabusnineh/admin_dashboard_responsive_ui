@@ -1,15 +1,11 @@
 import 'package:admin_dashboard_responsive_ui/view/dash_board_view.dart';
-import 'package:admin_dashboard_responsive_ui/view/one_screen.dart';
-import 'package:device_preview/device_preview.dart';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    DevicePreview(
-      enabled: false,
-      builder: (context) => const MyApp(),
-    ),
+    const MyApp(),
   );
 }
 class MyApp extends StatelessWidget {

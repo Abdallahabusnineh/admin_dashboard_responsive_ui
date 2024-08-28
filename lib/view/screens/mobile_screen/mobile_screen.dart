@@ -16,7 +16,6 @@ class MobileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: Color(0xFFF7F9FA),
-
       appBar: AppBar(
         title: Text(
           "Dashboard",

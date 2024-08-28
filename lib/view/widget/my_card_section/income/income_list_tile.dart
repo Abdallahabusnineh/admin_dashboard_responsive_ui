@@ -14,7 +14,7 @@ final Color color;
         radius: 5,
         backgroundColor: color,
       ),
-      title: Text(text,style: AppStyles.styleRegular16(context),maxLines: 2,overflow: TextOverflow.ellipsis,),
+      title: Text(text,style: AppStyles.styleRegular16(context),maxLines: 1,overflow: TextOverflow.ellipsis,),
       trailing: Text('\$$value',style: AppStyles.styleRegular16(context),),
     );
   }
